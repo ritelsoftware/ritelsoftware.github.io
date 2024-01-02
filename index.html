@@ -1,1 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>RitelOS - Web-Based Media OS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Comfortaa', cursive;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        .content {
+            margin: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Welcome to RitelOS</h1>
+    </div>
+    <div class="content">
+        <p>RitelOS is a simple web-based operating system created by Ritel Software, designed specifically for media. It's fast, efficient, and easy to use.</p>
+        <button id="learnMore">Learn More</button>
+    </div>
 
+    <script>
+        document.getElementById('learnMore').addEventListener('click', function() {
+            alert('Thank you for your interest in RitelOS! More information will be available soon.');
+        });
+    </script>
+</body>
+</html>
