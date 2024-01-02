@@ -1,39 +1,67 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>RitelOS - Web-Based Media OS</title>
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roku TV Interface</title>
     <style>
         body {
-            font-family: 'Comfortaa', cursive;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f0f0f0;
         }
-        .header {
-            background-color: #333;
+
+        #roku-container {
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            height: 100vh;
+        }
+
+        #side-menu {
+            background-color: #1f1f1f;
             color: #fff;
-            padding: 10px;
-            text-align: center;
+            padding: 20px;
         }
-        .content {
-            margin: 15px;
+
+        #main-content {
+            padding: 20px;
+        }
+
+        .channel {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .channel img {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
         }
     </style>
 </head>
 <body>
-    <div class="header">
-        <h1>RitelOS</h1>
-    </div>
-    <div class="content">
-        <p>RitelOS is a simple web-based operating system created by Ritel Software, designed specifically for media. It's fast, efficient, and easy to use.</p>
-        <button id="learnMore">Learn More</button>
+    <div id="roku-container">
+        <div id="side-menu">
+            <!-- Side menu content (e.g., user profile, settings, etc.) -->
+        </div>
+        
+        <div id="main-content">
+            <div class="channel">
+                <img src="channel1.png" alt="Channel 1">
+                <span>Channel 1</span>
+            </div>
+            <div class="channel">
+                <img src="channel2.png" alt="Channel 2">
+                <span>Channel 2</span>
+            </div>
+            <!-- Add more channels as needed -->
+        </div>
     </div>
 
     <script>
-        document.getElementById('learnMore').addEventListener('click', function() {
-            alert('Thank you for your interest in RitelOS! More information will be available soon.');
-        });
+        // Your JavaScript code here
     </script>
 </body>
 </html>
